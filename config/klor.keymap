@@ -50,6 +50,26 @@ mo_tog: behavior_mo_tog {
             tapping-term-ms = <200>;
             bindings = <&mo>, <&tog>;
         };
+rgb_brightness: rgb_brightness {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_BRIGHTNESS";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRD>, <&rgb_ug RGB_BRI>;
+        };
+
+      rgb_hue: rgb_hue {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_HUE";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+        };
+
+      rgb_saturation: rgb_saturation {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_SATURATION";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_SAD>, <&rgb_ug RGB_SAI>;
+        };
     };
 
     keymap {
@@ -145,7 +165,7 @@ mo_tog: behavior_mo_tog {
     &trans     &trans    &trans    &trans    &trans   &trans &bootloader  &bootloader  &rgb_ug RGB_TOG &rgb_ug RGB_EFF &trans &trans &kp F12 &to 0    
                                    &ext_power EP_TOG  &trans     &trans &to 0     &to 0    &trans   &trans    &ext_power EP_TOG    
                         >;
-            sensor-bindings = <&inc_dec_kp rgb_ug RGB_HUI rgb_ug RGB_HUD &inc_dec_kp rgb_ug RGB_BRI rgb_ug RGB_BRD>;
+            sensor-bindings = <&rgb_hue &rgb_brightness>;
                 };
         };
 };
