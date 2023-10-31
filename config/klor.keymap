@@ -86,7 +86,7 @@ mo_tog: behavior_mo_tog {
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
    │  SCAPS  │         │         │         │         │         │                    │    `    │         │         │    [    │    ]    │    =    │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │         │         │         │         ││        ││        ││         │         │         │         │    \    │    -    │
+   │   ESC   │         │         │         │         │         ││        ││        ││         │         │         │         │    \    │    -    │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                  │         │         │         │         ││         │         │         │   (0)   │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
@@ -94,7 +94,7 @@ mo_tog: behavior_mo_tog {
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
                &kp N1   &kp N2    &kp N3    &kp N4   &kp N5                            &kp N6   &kp N7    &kp N8    &kp N9    &kp N0
     &mt LSHIFT CLCK  &trans    &trans  &trans  &trans &trans                           &kp GRAVE &trans    &trans  &kp LEFT_BRACE &kp RIGHT_BRACE    &kp EQUAL
-    &trans    &trans    &trans &trans  &trans &trans  &trans     &trans    &trans      &trans   &trans    &trans    &trans    &kp SLASH     &kp MINUS
+    &kp ESC    &trans    &trans &trans  &trans &trans  &trans     &trans    &trans      &trans   &trans    &trans    &trans    &kp SLASH     &kp MINUS
                                   &trans    &trans    &trans    &trans     &trans      &trans   &trans    &to 0  
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -143,7 +143,7 @@ mo_tog: behavior_mo_tog {
                &kp F1    &kp F2    &kp F3    &kp F4     &kp F5                        &kp F6    &kp F7     &kp F8    &kp F9   &kp F10   
     &trans     &trans    &trans    &bt BT_CLR &bt BT_PRV &bt BT_NXT                   &trans    &trans    &trans    &trans    &kp F11    &trans 
     &trans     &trans    &trans    &trans    &trans   &rgb_ug RGB_EFF &bootloader  &bootloader  &rgb_ug RGB_EFF &trans &trans &trans &kp F12 &to 0    
-                                   &ext_power EP_TOG  &trans     &trans &to 0     &to 0    &trans   &btrans    &ext_power EP_TOG    
+                                   &ext_power EP_TOG  &trans     &trans &to 0     &to 0    &trans   &trans    &ext_power EP_TOG    
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
