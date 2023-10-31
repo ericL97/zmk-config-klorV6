@@ -134,7 +134,7 @@ mo_tog: behavior_mo_tog {
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
    │         │         │         │ BT_CLR  | BT_PRV  │ BT_NXT  │                    │         │         │         │         │   F11   │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │         │         │         │  RGB    ││  boot  ││  boot  |│   RGB   │         │         │         │   F12   │   (0)   |
+   │         │         │         │         │         │         ││  boot  ││  boot  |│ RGB Y/N │ RGB Eff │         │         │   F12   │   (0)   |
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                  │  Power  │         │         │   (0)   ││   (0)   │         │         │  Power  │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
@@ -142,10 +142,10 @@ mo_tog: behavior_mo_tog {
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
                &kp F1    &kp F2    &kp F3    &kp F4     &kp F5                        &kp F6    &kp F7     &kp F8    &kp F9   &kp F10   
     &trans     &trans    &trans    &bt BT_CLR &bt BT_PRV &bt BT_NXT                   &trans    &trans    &trans    &trans    &kp F11    &trans 
-    &trans     &trans    &trans    &trans    &trans   &rgb_ug RGB_EFF &bootloader  &bootloader  &rgb_ug RGB_EFF &trans &trans &trans &kp F12 &to 0    
+    &trans     &trans    &trans    &trans    &trans   &trans &bootloader  &bootloader  &rgb_ug RGB_TOG &rgb_ug RGB_EFF &trans &trans &kp F12 &to 0    
                                    &ext_power EP_TOG  &trans     &trans &to 0     &to 0    &trans   &trans    &ext_power EP_TOG    
                         >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp rgb_ug RGB_HUI rgb_ug RGB_HUD &inc_dec_kp rgb_ug RGB_BRI rgb_ug RGB_BRD>;
                 };
         };
 };
