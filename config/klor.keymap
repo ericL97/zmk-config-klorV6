@@ -50,7 +50,7 @@ mo_tog: behavior_mo_tog {
             tapping-term-ms = <200>;
             bindings = <&mo>, <&tog>;
         };
-rgb_brightness: rgb_brightness {
+       rgb_brightness: rgb_brightness {
             compatible = "zmk,behavior-sensor-rotate";
             label = "RGB_BRIGHTNESS";
             #sensor-binding-cells = <0>;
@@ -69,6 +69,12 @@ rgb_brightness: rgb_brightness {
             label = "RGB_SATURATION";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_SAD>, <&rgb_ug RGB_SAI>;
+        };
+      bt_sel: bt_sel {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "BT_SEL";
+            #sensor-binding-cells = <0>;
+            bindings = <&bt BT_PRV>, <&bt BT_NXT>;
         };
     };
 
@@ -93,7 +99,7 @@ rgb_brightness: rgb_brightness {
     &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B     &bootloader     &bootloader    &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  MO_TOG(3)
                                  &kp LALT &kp BSPC &kp DEL     MO_TOG(2)   &kp LGUI  &kp RET   &mo SPACE MO_TOG(1)   
                         >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&bt_sel &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
