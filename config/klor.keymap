@@ -88,16 +88,16 @@ mo_tog: behavior_mo_tog {
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
    │   SHFT  │    A    │    S    │    D    │    F    │    G    │                    │    H    │    J    │    K    │    L    │    ;    │    "    │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │   CTRL  │    Z    │    X    │    C    │    V    │    B    ││  MUTE  ││PLY/PSE ││    N    │    M    │    ,    │    .    │    /?   │   (3)   │
+   │   CTRL  │    Z    │    X    │    C    │    V    │    B    ││  MUTE  ││PLY/PSE ││    N    │    M    │    ,    │    .    │    /?   │ CMD/WIN │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                 │  ALT    │  BSPC   │  DEL    │   (2)   ││ CMD/WIN │  ENTER  │  SPACE  │   (1)   │  
+                                 │  BSPC    │  DEL   │  (2)    │   ALT   ││ CMD/WIN │  ENTER  │  SPACE  │   (1)   │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
                 &kp Q     &kp W     &kp E     &kp R     &kp T                          &kp Y     &kp U     &kp I     &kp O     &kp P
     &kp LSHIFT  &kp A     &kp S     &kp D     &kp F     &kp G                          &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT
-    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B     &bootloader     &bootloader    &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  MO_TOG(3)
-                                 &kp LALT &kp BSPC &kp DEL     MO_TOG(2)   &kp LGUI  &kp RET   &kp SPACE MO_TOG(1)   
+    &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B     &bootloader     &bootloader    &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp LGUI
+                                 &kp BSPC &kp DEL  MO_TOG(2) &kp LALT   &to 3  &kp RET   &kp SPACE MO_TOG(1)   
                         >;
             sensor-bindings = <&bt_sel &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
@@ -114,14 +114,14 @@ mo_tog: behavior_mo_tog {
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
    │   ESC   │         │         │         │         │         ││        ││        ││         │         │         │         │    \    │    -    │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                 │         │         │         │         ││         │         │         │   (0)   │  
+                                 │         │         │         │         ││   (0)   │         │         │         │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
                &kp N1   &kp N2    &kp N3    &kp N4   &kp N5                            &kp N6   &kp N7    &kp N8    &kp N9    &kp N0
     &mt LSHIFT CLCK  &trans    &trans  &trans  &trans &trans                           &kp GRAVE &trans    &trans  &kp LEFT_BRACE &kp RIGHT_BRACE    &kp EQUAL
     &kp ESC    &trans   &trans     &trans    &trans   &trans      &trans    &trans     &trans   &trans    &trans    &trans   &kp SLASH  &kp MINUS
-                                  &trans    &trans    &trans    &trans     &trans      &trans   &trans    &to 0  
+                                  &trans    &trans    &trans    &trans     &to 0      &trans   &trans    &trans 
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
@@ -138,14 +138,14 @@ mo_tog: behavior_mo_tog {
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
    │   CAD   │         │         │         │         │         ││        ││        ││         │   PgDn  │         │         │         │         │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                 │         │         │   (3)   │   (0)   ││         │         │   TAB   │         │  
+                                 │         │         │   (0)   │   (3)   ││   (0)   │         │   TAB   │         │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
                &trans    &trans     &trans    &trans    &trans                       &trans   &kp PG_UP   &kp UP   &trans    &trans     
     &trans &trans    &trans &trans    &trans    &trans                               &kp HOME   &kp LEFT  &kp DOWN  &kp RIGHT &kp END  &trans  
     &kp LC(LA(DELETE)) &trans &trans &trans  &trans    &trans    &trans     &trans   &trans &kp PAGE_DOWN  &trans   &trans   &trans    &trans
-                                  &trans &trans   &to 3     &to 0      &trans    &trans    &kp TAB    &trans  
+                                  &trans &trans   &to 0   &to 3   &to 0  &trans    &kp TAB    &trans  
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
