@@ -97,7 +97,7 @@ mo_tog: behavior_mo_tog {
                 &kp Q     &kp W     &kp E     &kp R     &kp T                          &kp Y     &kp U     &kp I     &kp O     &kp P
     &kp LSHIFT  &kp A     &kp S     &kp D     &kp F     &kp G                          &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT
     &kp LCTRL   &kp Z     &kp X     &kp C     &kp V     &kp B     &bootloader     &bootloader    &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH MO_TOG(3)
-                                 &kp BSPC &kp DEL  MO_TOG(2) &kp LALT   &kp LGUI  &kp RET   &kp SPACE MO_TOG(1)   
+                                 &kp BSPC &kp DEL  MO_TOG(2) &kp LALT   &kp RWIN  &kp RET   &kp SPACE MO_TOG(1)   
                         >;
             sensor-bindings = <&bt_sel &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
