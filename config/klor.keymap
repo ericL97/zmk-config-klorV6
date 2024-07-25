@@ -65,7 +65,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LGUI &kp E &kp R &kp I &kp C &kp DOT &kp L &kp O &kp C &kp K &kp TAB>,
+                <&kp E &kp R &kp I &kp C &kp DOT &kp L &kp O &kp C &kp K &kp TAB>,
                 <&macro_tap>,
                 <&kp LS(R) &kp N5 &kp F &kp U &kp R &kp B &kp I &kp S &kp H &kp N2 &kp AT>,
                 <&macro_tap>,
@@ -79,7 +79,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LGUI &kp LS(W) &kp E &kp L &kp C &kp O &kp M &kp E &kp AT &kp N1 &kp N2 &kp N3 &kp EXCL &kp RET>;
+                <&kp LS(W) &kp E &kp L &kp C &kp O &kp M &kp E &kp AT &kp N1 &kp N2 &kp N3 &kp EXCL &kp RET>;
         };
     };
 
