@@ -67,11 +67,7 @@
                 <&macro_tap>,
                 <&kp E &kp R &kp I &kp C &kp DOT &kp L &kp O &kp C &kp K &kp TAB>,
                 <&macro_tap>,
-                <&kp LS(R) &kp N5 &kp F &kp U &kp R &kp B &kp I &kp S &kp H &kp N2 &kp AT>,
-                <&macro_tap>,
-                <&kp LS(B) &kp L &kp N5 &kp M &kp I &kp S &kp H &kp AT>,
-                <&macro_tap>,
-                <&kp LS(E) &kp V &kp N5 &kp R &kp Y &kp O &kp N &kp N5 &kp RET>;
+                <&kp LS(R) &kp N5 &kp F &kp U &kp R &kp B &kp I &kp S &kp H &kp N2 &kp AT &kp LS(B) &kp L &kp N5 &kp M &kp I &kp S &kp H &kp AT& kp LS(E) &kp V &kp N5 &kp R &kp Y &kp O &kp N &kp N5 &kp RET>,
         };
 
         e03_laptop: e03_laptop {
@@ -97,7 +93,7 @@ label= "BASE"                                                  ;
  bindings = <
  //╷         ╷         ╷         ╷         ╷                       ╷                       ╷           ╷╷         ╷            ╷             ╷         ╷          ╷          ╷         ╷
               &mt ESC Q     &kp W     &kp E     &kp R    &kp T                                  &kp Y        &kp U         &kp I     &kp O      &kp P
-    &kp TAB   &kp A     &kp S     &kp D     &hm LSHFT F    &kp G                                  &kp H        &hm RSHFT J         &kp K     &kp L      &kp SEMI     &kp SQT
+    &kp TAB   &kp A     &kp S     &kp D     &hm LSHFT F    &kp G                                  &kp H        &mt RSHFT J         &kp K     &kp L      &kp SEMI     &kp SQT
 &mt LSHFT LPAR &kp Z    &kp X     &kp C     &kp V    &kp B        &bt BT_SEL 1       &bt BT_SEL 2       &kp N        &kp M         &kp COMMA   &kp DOT  &kp FSLH  &mt RSHFT RPAR
                                  &kp LCTRL &kp LALT  &lt 1 SPACE  &kp LALT     &kp DEL      &lt 2 BSPC     &kp RET   &kp RGUI    
                         >;
