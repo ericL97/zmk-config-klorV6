@@ -67,7 +67,7 @@
                 <&macro_tap>,
                 <&kp E &kp R &kp I &kp C &kp DOT &kp L &kp O &kp C &kp K &kp TAB>,
                 <&macro_tap>,
-                <&kp LS(R) &kp N5 &kp F &kp U &kp R &kp B &kp I &kp S &kp H &kp N2 &kp AT &kp LS(B) &kp L &kp N5 &kp M &kp I &kp S &kp H &kp AT& kp LS(E) &kp V &kp N5 &kp R &kp Y &kp O &kp N &kp N5 &kp RET>;
+                <&kp LS(R) &kp N5 &kp F &kp U &kp R &kp B &kp I &kp S &kp H &kp N2 &kp AT &kp LS(B) &kp L &kp N5 &kp M &kp I &kp S &kp H &kp AT &kp LS(E) &kp V &kp N5 &kp R &kp Y &kp O &kp N &kp N5 &kp RET>;
         };
 
         e03_laptop: e03_laptop {
